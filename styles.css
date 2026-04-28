@@ -1,0 +1,28 @@
+input[type="checkbox"] {
+  appearance:none;
+  border: 2px dashed darkblue;
+  width: 20px ;height: 20px;
+  color: rgb(136, 38, 38);
+  vertical-align: middle;
+}
+
+input[type="checkbox"]:checked{
+  background-color: blue;
+  border-color: blue;
+}
+input[type="checkbox"]:checked::before {
+  content:"✓";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}
+input[type="checkbox"]:checked::after {
+  content:"✓";
+  color: white;
+  display: block;
+  text-align: center;
+  line-height: 20px;
+  font-size: 16px;
+}
